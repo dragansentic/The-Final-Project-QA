@@ -21,8 +21,8 @@ import pages.NotificationSistemPage;
 
 public class MealItemTest extends BasicTest {
 	
-	@Test(priority = 0)
-	public void add_meal_to_cart() throws InterruptedException {
+	@Test(priority = 0) 
+	public void AddMealToCart () throws InterruptedException {
 		this.driver.navigate().to(baseURL + "meal/lobster-shrimp-chicken-quesadilla-combo");
 		this.driver.manage().window().maximize();
 		
@@ -49,7 +49,7 @@ public class MealItemTest extends BasicTest {
 	
 	
 	@Test(priority = 10)
-	public void add_meal_to_favorite() throws InterruptedException {
+	public void AddMealToFavorite() throws InterruptedException {
 		this.driver.navigate().to(baseURL + "meal/lobster-shrimp-chicken-quesadilla-combo");
 		this.driver.manage().window().maximize();
 
@@ -81,7 +81,7 @@ public class MealItemTest extends BasicTest {
 	
 	
 	@Test(priority = 20)
-	public void clear_cart() throws InterruptedException, IOException {
+	public void ClearCart() throws InterruptedException, IOException {
 		this.driver.navigate().to(baseURL + "meals");
 		this.driver.manage().window().maximize();
 

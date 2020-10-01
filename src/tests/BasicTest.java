@@ -37,7 +37,8 @@ public abstract class BasicTest {
 	}
 	
 	@AfterMethod
-	public void afterTest(TestResult result) throws Exception {
+	public void afterTest () {
+//	public void afterTest(TestResult result) throws Exception {
 //		if (((ITestResult) result).getStatus() == ITestResult.FAILURE) {
 //			File ss = ((TakesScreenshot) this.driver).getScreenshotAs(OutputType.FILE);
 //			String fileName = new SimpleDateFormat("yyyyMMddHHmm'.png'").format(new Date());

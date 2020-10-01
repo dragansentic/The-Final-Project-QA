@@ -15,7 +15,7 @@ import pages.ProfilePage;
 public class ProfileTest extends BasicTest {
 
 	@Test(priority = 0)
-	public void edit_profile_test() throws InterruptedException {
+	public void EditProfile() throws InterruptedException {
 		this.driver.navigate().to(baseURL + "/guest-user/login-form");
 		this.driver.manage().window().maximize();
 
@@ -47,7 +47,7 @@ public class ProfileTest extends BasicTest {
 	}
 
 	@Test(priority = 10)
-	public void change_profile_image_test() throws InterruptedException, IOException {
+	public void ChangeProfileImage() throws InterruptedException, IOException {
 		this.driver.navigate().to(baseURL + "/guest-user/login-form");
 		this.driver.manage().window().maximize();
 
