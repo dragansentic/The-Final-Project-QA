@@ -16,7 +16,7 @@ public class ProfileTest extends BasicTest {
 
 	@Test(priority = 0)
 	public void EditProfile() throws InterruptedException {
-		this.driver.navigate().to(baseURL + "/guest-user/login-form");
+		this.driver.navigate().to(baseURL + "guest-user/login-form");
 		this.driver.manage().window().maximize();
 
 		LocationPopupPage lpp = new LocationPopupPage(driver, wait);
@@ -28,7 +28,7 @@ public class ProfileTest extends BasicTest {
 		NotificationSistemPage nsp = new NotificationSistemPage(driver, wait);
 		assertEquals("Login Successfull", nsp.getMessageText());
 
-		this.driver.navigate().to(baseURL + "/member/profile");
+		this.driver.navigate().to(baseURL + "member/profile");
 		ProfilePage pp = new ProfilePage(driver, wait);
 		String firstName = "Vladimir";
 		String lastName = "Minic";
@@ -48,11 +48,11 @@ public class ProfileTest extends BasicTest {
 
 	@Test(priority = 10)
 	public void ChangeProfileImage() throws InterruptedException, IOException {
-		this.driver.navigate().to(baseURL + "/guest-user/login-form");
+		this.driver.navigate().to(baseURL + "guest-user/login-form");
 		this.driver.manage().window().maximize();
 
-//		LocationPopupPage lpp = new LocationPopupPage(driver, wait);
-//		lpp.closePopupSelectLocation();
+		LocationPopupPage lpp = new LocationPopupPage(driver, wait);
+		lpp.closePopupSelectLocation();
 
 		LoginPage lp = new LoginPage(driver, wait);
 		lp.login(email, password);
@@ -60,7 +60,7 @@ public class ProfileTest extends BasicTest {
 		NotificationSistemPage nsp = new NotificationSistemPage(driver, wait);
 		assertEquals(nsp.getMessageText(), "Login Successfull");
 		
-		this.driver.navigate().to(baseURL + "/member/profile");
+		this.driver.navigate().to(baseURL + "member/profile");
 		ProfilePage pp = new ProfilePage(driver, wait);
 		
 		pp.uploadAProfilePicture();

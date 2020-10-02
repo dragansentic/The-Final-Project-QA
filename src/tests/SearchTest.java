@@ -30,23 +30,20 @@ public class SearchTest extends BasicTest {
 		FileInputStream fis = new FileInputStream(file);
 		XSSFWorkbook wb = new XSSFWorkbook(fis);
 		XSSFSheet sheet = wb.getSheet("Meal Search Results");
-		
-		for (int i = 1; i < sheet.getLastRowNum(); i++) {
+
+		for (int i = 1; i < sheet.getPhysicalNumberOfRows(); i++) {
 			XSSFRow row = sheet.getRow(i);
-			
-			this.driver.get(""+row.getCell(1).getStringCellValue()+"");
+
+			this.driver.get("" + row.getCell(1).getStringCellValue() + "");
 			lpp.openPopupSelectLocation();
-			lpp.setLocation(""+row.getCell(0).getStringCellValue()+"");
-			
-			Thread.sleep(3333);
+			lpp.setLocation("" + row.getCell(0).getStringCellValue() + "");
+			Thread.sleep(6666);
+
 			SearchResultPage srp = new SearchResultPage(driver, wait);
 			assertEquals(srp.numberOfSearchResults(), row.getCell(2).getNumericCellValue());
 			
-			double d = 0;
-			if (row.getCell(2).getNumericCellValue() != d) {
-				for (int j = 3; j < 3 + row.getCell(2).getNumericCellValue(); j++) {
-					assertTrue(srp.listOfMealNames().get(j - 3).contains(row.getCell(j).getStringCellValue()));
-				}
+			for (int j = 3; j < 3 + row.getCell(2).getNumericCellValue(); j++) {
+				assertTrue(srp.listOfMealNames().get(j - 3).contains(row.getCell(j).getStringCellValue()));
 			}
 		}
 	}

@@ -25,7 +25,7 @@ public abstract class BasicTest {
 	protected String baseURL = "http://demo.yo-meals.com/";
 	protected String email = "customer@dummyid.com";
 	protected String password = "12345678a";
-	
+
 	@BeforeClass
 	public void beforeClass() {
 		System.setProperty("webdriver.chrome.driver", "driver-lib\\chromedriver.exe");
@@ -35,17 +35,17 @@ public abstract class BasicTest {
 		this.driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		this.driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 	}
-	
+
 	@AfterMethod
-	public void afterTest () {
-//	public void afterTest(TestResult result) throws Exception {
-//		if (((ITestResult) result).getStatus() == ITestResult.FAILURE) {
-//			File ss = ((TakesScreenshot) this.driver).getScreenshotAs(OutputType.FILE);
-//			String fileName = new SimpleDateFormat("yyyyMMddHHmm'.png'").format(new Date());
-//			File save = new File("/.screenshots/" + fileName);
-//			FileHandler.copy(ss, save);
-//		}
+	public void afterTest(TestResult result) throws Exception {
+		if (((ITestResult) result).getStatus() == ITestResult.FAILURE) {
+			File take = ((TakesScreenshot) this.driver).getScreenshotAs(OutputType.FILE);
+			String fileName = new SimpleDateFormat("yyyyMMddHHmm'.png'").format(new Date());
+			File save = new File("/.screenshots/" + fileName);
+			FileHandler.copy(take, save);
+		}
 		this.driver.manage().deleteAllCookies();
+		this.driver.navigate().refresh();
 	}
 
 	@AfterClass

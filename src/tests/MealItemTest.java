@@ -37,7 +37,7 @@ public class MealItemTest extends BasicTest {
 		assertTrue(nsp.getMessageText().contains("The Following Errors Occurred:"));
 		assertTrue(nsp.getMessageText().contains("Please Select Location"));
 		
-		Thread.sleep(5000);
+		nsp.waitUntilDisappears();
 		
 		lpp.openPopupSelectLocation();
 		lpp.setLocation("Burlington - Vermont");
@@ -75,7 +75,6 @@ public class MealItemTest extends BasicTest {
 
 		assertEquals(nsp.getMessageText(), "Product has been added to your favorites.");
 		
-	
 	}
 
 	

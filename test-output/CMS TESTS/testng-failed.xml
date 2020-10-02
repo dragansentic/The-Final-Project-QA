@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [CMS TESTS]">
+  <test thread-count="5" name="Profile Test(failed)">
+    <classes>
+      <class name="tests.ProfileTest">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="ChangeProfileImage"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- tests.ProfileTest -->
+    </classes>
+  </test> <!-- Profile Test(failed) -->
   <test thread-count="5" name="Meal Item Test(failed)">
     <classes>
       <class name="tests.MealItemTest">
         <methods>
           <include name="afterClass"/>
-          <include name="add_meal_to_favorite"/>
+          <include name="ClearCart"/>
           <include name="beforeClass"/>
-          <include name="clear_cart"/>
+          <include name="AddMealToFavorite"/>
+          <include name="afterTest"/>
         </methods>
       </class> <!-- tests.MealItemTest -->
     </classes>
   </test> <!-- Meal Item Test(failed) -->
-  <test thread-count="5" name="Search Test(failed)">
-    <classes>
-      <class name="tests.SearchTest">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="search_results_test"/>
-        </methods>
-      </class> <!-- tests.SearchTest -->
-    </classes>
-  </test> <!-- Search Test(failed) -->
 </suite> <!-- Failed suite [CMS TESTS] -->

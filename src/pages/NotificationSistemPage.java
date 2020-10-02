@@ -22,7 +22,7 @@ public class NotificationSistemPage extends BasicPage {
 	}
 	
 	public void waitUntilDisappears () {
-		this.wait.until(ExpectedConditions.attributeToBe(By.xpath("//*[contains(@class, 'system_message')]"),"style ","display: none;"));
+		this.wait.until(ExpectedConditions.attributeToBe(By.xpath("//*[contains(@class, 'system_message')]"), "style", "display: none;"));
 	}
 
 }

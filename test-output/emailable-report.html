@@ -8,97 +8,54 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">78,579</td><td></td><td></td></tr>
+<tr><th colspan="7">CMS TESTS</th></tr>
+<tr><td><a href="#t0">Profile Test</a></td><td class="num">1</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">25,262</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Meal Item Test</a></td><td class="num">1</td><td class="num attn">2</td><td class="num">0</td><td class="num">0</td><td class="num">19,971</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Search Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">151,933</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">3</th><th class="num attn">3</th><th class="num">0</th><th class="num">0</th><th class="num">197,166</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">tests.MealItemTest</td><td><a href="#m0">add_meal_to_favorite</a></td><td rowspan="1">1601546363089</td><td rowspan="1">14835</td></tr><tr class="failedeven"><td><a href="#m1">clear_cart</a></td><td rowspan="1">1601546378081</td><td rowspan="1">39163</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.MealItemTest</td><td><a href="#m2">add_meal_to_cart</a></td><td rowspan="1">1601546345197</td><td rowspan="1">17779</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">CMS TESTS</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Profile Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">tests.ProfileTest</td><td><a href="#m0">afterTest</a></td><td rowspan="1">1601647630045</td><td rowspan="1">-1601647630045</td></tr><tr><th colspan="4">Profile Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="2">tests.ProfileTest</td><td><a href="#m1">afterClass</a></td><td rowspan="1">1601647630123</td><td rowspan="1">-1601647630123</td></tr><tr class="skippedeven"><td><a href="#m2">afterTest</a></td><td rowspan="1">1601647630118</td><td rowspan="1">-1601647630118</td></tr><tr><th colspan="4">Profile Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">tests.ProfileTest</td><td><a href="#m3">ChangeProfileImage</a></td><td rowspan="1">1601647630082</td><td rowspan="1">0</td></tr><tr><th colspan="4">Profile Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.ProfileTest</td><td><a href="#m4">EditProfile</a></td><td rowspan="1">1601647611711</td><td rowspan="1">18317</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Meal Item Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">tests.MealItemTest</td><td><a href="#m5">afterTest</a></td><td rowspan="1">1601647650164</td><td rowspan="1">-1601647650164</td></tr><tr><th colspan="4">Meal Item Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="3">tests.MealItemTest</td><td><a href="#m6">afterClass</a></td><td rowspan="1">1601647650253</td><td rowspan="1">-1601647650253</td></tr><tr class="skippedeven"><td><a href="#m7">afterTest</a></td><td rowspan="2">1601647650243</td><td rowspan="2">-1601647650243</td></tr><tr class="skippedeven"><td><a href="#m8">afterTest</a></td></tr><tr><th colspan="4">Meal Item Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">tests.MealItemTest</td><td><a href="#m9">AddMealToFavorite</a></td><td rowspan="1">1601647650182</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m10">ClearCart</a></td><td rowspan="1">1601647650203</td><td rowspan="1">0</td></tr><tr><th colspan="4">Meal Item Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.MealItemTest</td><td><a href="#m11">AddMealToCart</a></td><td rowspan="1">1601647633284</td><td rowspan="1">16863</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Search Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">tests.SearchTest</td><td><a href="#m12">afterTest</a></td><td rowspan="1">1601647802281</td><td rowspan="1">-1601647802281</td></tr><tr><th colspan="4">Search Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">tests.SearchTest</td><td><a href="#m13">afterClass</a></td><td rowspan="1">1601647802289</td><td rowspan="1">-1601647802289</td></tr><tr><th colspan="4">Search Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.SearchTest</td><td><a href="#m14">search_results_test</a></td><td rowspan="1">1601647653745</td><td rowspan="1">148533</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">tests.MealItemTest#add_meal_to_favorite</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Product has been added to your favorites.] but found [Product has been removed from your favorites.]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at org.testng.Assert.assertEquals(Assert.java:585)
-	at tests.MealItemTest.add_meal_to_favorite(MealItemTest.java:76)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+<h2>Profile Test</h2><h3 id="m0">tests.ProfileTest#afterTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest, Method, Object[], ITestResult&gt; into a @AfterMethod annotated afterTest.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
 	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">tests.MealItemTest#clear_cart</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;javascript:void(0);&quot; class=&quot;btn btn--primary btn--large js-proceedtoAddInCart &quot; js-current-product-id=&quot;37&quot;&gt;...&lt;/a&gt; is not clickable at point (933, 406). Other element would receive the click: &lt;div class=&quot;middle-footer&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=85.0.4183.121)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
-System info: host: &apos;PPRIKQ-PC&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_241&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\PPRIKQ\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51666}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 8ad6d84c30677c2671c38f28de86bee0
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at pages.MealPage.addToCart(MealPage.java:29)
-	at tests.MealItemTest.clear_cart(MealItemTest.java:106)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.ProfileTest#afterClass</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.ProfileTest#afterTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.ProfileTest#ChangeProfileImage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest, Method, Object[], ITestResult&gt; into a @AfterMethod annotated afterTest.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
 	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">tests.MealItemTest#add_meal_to_cart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.ProfileTest#EditProfile</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Meal Item Test</h2><h3 id="m5">tests.MealItemTest#afterTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest, Method, Object[], ITestResult&gt; into a @AfterMethod annotated afterTest.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">tests.MealItemTest#afterClass</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">tests.MealItemTest#afterTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">tests.MealItemTest#afterTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">tests.MealItemTest#AddMealToFavorite</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest, Method, Object[], ITestResult&gt; into a @AfterMethod annotated afterTest.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">tests.MealItemTest#ClearCart</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest, Method, Object[], ITestResult&gt; into a @AfterMethod annotated afterTest.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">tests.MealItemTest#AddMealToCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Search Test</h2><h3 id="m12">tests.SearchTest#afterTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest, Method, Object[], ITestResult&gt; into a @AfterMethod annotated afterTest.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">tests.SearchTest#afterClass</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">tests.SearchTest#search_results_test</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -40,9 +40,6 @@ public class ProfilePage extends BasicPage {
 	}
 	
 	public WebElement getCountryInput () {
-//		WebElement s = driver.findElement(By.xpath("//*[@id=\"cars\"]"));
-//		Select select = new Select(e);
-//		select.selectByValue("saab");
 		return this.driver.findElement(By.xpath("//*[@id=\"user_country_id\"]"));
 	}
 	
@@ -90,9 +87,7 @@ public class ProfilePage extends BasicPage {
 		return this.driver.findElement(By.className("remove"));
 	}
 	
-	
 	public void uploadAProfilePicture() throws IOException {
-//        WebElement btn = this.driver.findElement(By.className("upload"));
         ((JavascriptExecutor) this.driver).executeScript("arguments[0].click();", this.getUploadImgButton());
         String imgPath = new File("images/brofist.jpg").getCanonicalPath();
         this.driver.findElement(By.xpath("//input[@type='file']")).sendKeys(imgPath);
@@ -105,7 +100,6 @@ public class ProfilePage extends BasicPage {
 	public WebElement getSavePersonalInformationButton () {
 		return this.driver.findElement(By.xpath("/html/body/div[6]/div/div/div/div[2]/div/div/div[4]/form/div[5]/div/fieldset/input"));
 	}
-	
 	
 	public void changeAllBasicInformations (String firstName, String lastName, String address, String phoneNo, String zipCode) throws InterruptedException {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
